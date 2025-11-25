@@ -23,15 +23,15 @@ run_headless_custom.bat K:\testlab /data test -import /data/test.exe -scriptPath
 to automate multiple scripts look at the run scripts.bat there is the logic to do just that or u can just  -postScript to run_headless_custom.bat 
 
 
-Workflow_Orchestrator.py
-# Usage: -postScript Workflow_Orchestrator.py
-# Reads 'pipeline.txt' and executes scripts in order
-import os
+    Workflow_Orchestrator.py
+    # Usage: -postScript Workflow_Orchestrator.py
+    # Reads 'pipeline.txt' and executes scripts in order
+    import os
 
-CONFIG_FILE = "/data/pipeline.txt" # List of script names, one per line
+    CONFIG_FILE = "/data/pipeline.txt" # List of script names, one per line
 
     if os.path.exists(CONFIG_FILE):
-        with open(CONFIG_FILE, "r") as f:
+    with open(CONFIG_FILE, "r") as f:
         scripts = f.readlines()
     
     for script in scripts:
@@ -44,5 +44,6 @@ CONFIG_FILE = "/data/pipeline.txt" # List of script names, one per line
             print("    (Script chaining logic would go here)")
     else:
     print(">>> No pipeline config found.")
+
 
    then u place your scripts in pipeline.txt for the workflow your aimming for.
