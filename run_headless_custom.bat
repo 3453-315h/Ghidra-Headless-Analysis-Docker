@@ -9,7 +9,7 @@ if "%~1"=="" (
     echo Usage: run_headless_custom.bat [SourceFolder] [GhidraArguments...]
     echo.
     echo Example:
-    echo   run_headless_custom.bat K:\mrtlab /data mrt_proj -import /data -recursive -postScript Find_Base64.py
+    echo   run_headless_custom.bat K:\testlab /data test_proj -import /data -recursive -postScript Find_Base64.py
     echo.
     echo The first argument is the Windows folder to mount.
     echo Everything else is passed directly to Ghidra's analyzeHeadless.
@@ -65,3 +65,4 @@ echo Analysis complete. Container cleaned up.
 echo Project files remain in: %SOURCE_DIR%
 echo ============================================================================
 exit /b %EXIT_CODE%
+
