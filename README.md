@@ -30,8 +30,8 @@ import os
 
 CONFIG_FILE = "/data/pipeline.txt" # List of script names, one per line
 
-if os.path.exists(CONFIG_FILE):
-    with open(CONFIG_FILE, "r") as f:
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, "r") as f:
         scripts = f.readlines()
     
     for script in scripts:
@@ -42,7 +42,7 @@ if os.path.exists(CONFIG_FILE):
             # or we simulate it by importing the module (complex in Jython).
             # Easier method: Print instructions for the Batch file to loop.
             print("    (Script chaining logic would go here)")
-else:
+    else:
     print(">>> No pipeline config found.")
 
-    then u place your scripts in pipeline.txt for the workflow your aimming for.
+   then u place your scripts in pipeline.txt for the workflow your aimming for.
