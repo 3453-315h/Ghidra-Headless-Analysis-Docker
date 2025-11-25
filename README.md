@@ -47,3 +47,6 @@ Workflow_Orchestrator.py
 
 
    then u place your scripts in pipeline.txt for the workflow your aimming for.
+
+
+   just a fyi one can use this setup to work with antigrivity and have it work with ghidra....
