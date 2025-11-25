@@ -1,4 +1,4 @@
-Ghidra Headless Analysis Server Docker
+Ghidra Headless Analysis Server Docker 24/11/25
 
 the default working dir is c:\ghidra_work
 
